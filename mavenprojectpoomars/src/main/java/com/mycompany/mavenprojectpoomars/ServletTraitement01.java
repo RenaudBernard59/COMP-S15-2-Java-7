@@ -6,7 +6,7 @@
 package com.mycompany.mavenprojectpoomars;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,11 +30,16 @@ public class ServletTraitement01 extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-
-        }
-    }
+        int inbvaleur =0;
+        HttpSession sess = request.getSession(true);
+        if(request.getParameter("NbValeur") !=null) {
+            inbvaleur = Integer.parseInt(request.getParameter("NbValeur"));
+        }//END if
+        
+        sess.stAttribute("NbValeur", inbvaleur);
+        RequestDispatcher rd = request.getRequestDispatcher("SaisieNombres02.jsp");
+         
+    }//END processRequest
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

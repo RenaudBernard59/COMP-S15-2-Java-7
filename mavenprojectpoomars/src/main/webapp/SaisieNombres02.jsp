@@ -9,9 +9,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Formulaire Dynamique de Saisie</title>
     </head>
     <body>
         <h1>Hello World!</h1>
+        <%
+          int inbvaleur = 0;  
+          if(session.getAttribute("NbValeur")!=null) {
+              inbvaleur = (int) session.getAttribute("NbValeur");
+          }//END if
+          %>
+        <form method="post" action="Traitement02">
+        <%
+          for(int i=0; i<inbvaleur;i++) {
+        %>
+        <label>Saisie du nombre <%=i%> : </label>
+        <input type="text" name="sval<%=i%>" required=""/>
+        <%
+          }//END for
+        %>
+        <input type="submit" title="Envoyer"/>
     </body>
 </html>

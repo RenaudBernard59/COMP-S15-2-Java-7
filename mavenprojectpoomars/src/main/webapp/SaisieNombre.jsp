@@ -12,6 +12,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>0</h1>
+        <from method="post" action="Traitement01"> 
+            <label>Saisie du nombre : </label> 
+            <input type="text" name="NbValeur" required/> 
+            <br/> 
+            <input type="submit" title="Envoyer"/> 
+        </from> 
     </body>
 </html>

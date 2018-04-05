@@ -24,10 +24,11 @@
           for(int i=0; i<inbvaleur;i++) {
         %>
         <label>Saisie du nombre <%=i%> : </label>
-        <input type="text" name="sval<%=i%>" required=""/>
+        <input type="text" name="sval<%=i%>" required=""/><br/>
         <%
           }//END for
         %>
         <input type="submit" title="Envoyer"/>
+        </form>
     </body>
 </html>

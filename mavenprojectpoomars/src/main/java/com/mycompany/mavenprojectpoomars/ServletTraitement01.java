@@ -40,8 +40,7 @@ public class ServletTraitement01 extends HttpServlet {
         
         sess.setAttribute("NbValeur", inbvaleur);
         RequestDispatcher rd = request.getRequestDispatcher("SaisieNombres02.jsp");
-        ServletResponse reponse = null;
-        rd.forward(request, reponse);
+        rd.forward(request, response);
     }//END processRequest
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

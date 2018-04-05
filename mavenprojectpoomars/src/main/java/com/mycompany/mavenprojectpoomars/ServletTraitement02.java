@@ -43,7 +43,7 @@ public class ServletTraitement02 extends HttpServlet {
             }//END if
             
             for(int i=0;i<inbvaleur;i++) {
-                if (sess.getAttribute("sval"+i) != null) {
+                if (request.getParameter("sval"+i) != null) {
                     listedesvaleurs.add(new Double(
                             request.getParameter("sval"+i)
                     ));
@@ -53,21 +53,19 @@ public class ServletTraitement02 extends HttpServlet {
             }//END for
             
             //Calcul de la Somme
-            Double resultatSomme;
-            for (String item : listedesvaleurs) {
-               resultatSomme = resultatSomme + (Double) item;
+            Double resultatSomme=0.0;
+            for (Double item : listedesvaleurs) {
+               resultatSomme += item;
             }
             
         
             
             //Calcul de la Moyenne
-            Double resultatMoyenne;
+            Double resultatMoyenne=0.0;
             resultatMoyenne = resultatSomme / inbvaleur;
             
             //Afficher les variables en HTML
             
-            out.println("<p>La Somme des valeurs vaut : "+resultatSomme+"</p>");
-            out.println("<p>La Moyenne des valeur vaut : "+resultatMoyenne+"</p>");
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -75,7 +73,11 @@ public class ServletTraitement02 extends HttpServlet {
             out.println("<title>Servlet ServletTraitement02</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Somme = " + request.getContextPath() + "</h1>");
+            out.println("<h1>Le Résultat !</h1>");
+            
+            out.println("<p>La Somme des valeurs vaut : "+resultatSomme+"</p>");
+            out.println("<p>La Moyenne des valeur vaut : "+resultatMoyenne+"</p>");
+           
             out.println("</body>");
             out.println("</html>");
         }

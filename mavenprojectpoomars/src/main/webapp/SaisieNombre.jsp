@@ -8,15 +8,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Saisie de nombre</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <from method="post" action="Traitement01"> 
+        <form method="post" action="Traitement01"> 
             <label>Saisie du nombre : </label> 
             <input type="text" name="NbValeur" required/> 
             <br/> 
             <input type="submit" title="Envoyer"/> 
-        </from> 
+        </form> 
     </body>
 </html>

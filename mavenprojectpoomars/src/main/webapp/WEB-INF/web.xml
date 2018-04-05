@@ -4,9 +4,17 @@
         <servlet-name>ServletTraitement01</servlet-name>
         <servlet-class>com.mycompany.mavenprojectpoomars.ServletTraitement01</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletTraitement02</servlet-name>
+        <servlet-class>com.mycompany.mavenprojectpoomars.ServletTraitement02</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletTraitement01</servlet-name>
         <url-pattern>/Traitement01</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletTraitement02</servlet-name>
+        <url-pattern>/Traitement02</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -3,7 +3,7 @@
     Created on : 5 avr. 2018, 11:43:32
     Author     : renob
 --%>
-
+<%@page language="java"%> 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

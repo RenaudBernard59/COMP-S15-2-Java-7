@@ -8,9 +8,11 @@ package com.mycompany.mavenprojectpoomars;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -36,8 +38,9 @@ public class ServletTraitement01 extends HttpServlet {
             inbvaleur = Integer.parseInt(request.getParameter("NbValeur"));
         }//END if
         
-        sess.stAttribute("NbValeur", inbvaleur);
+        sess.setAttribute("NbValeur", inbvaleur);
         RequestDispatcher rd = request.getRequestDispatcher("SaisieNombres02.jsp");
+        ServletResponse reponse = null;
         rd.forward(request, reponse);
     }//END processRequest
 

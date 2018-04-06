@@ -16,31 +16,23 @@
         
         <h2>Exercice 1</h2>
         <p>Un Kilomètre à pied</p>
-        <form method="post" action="XXX">
-            <input type="submit" title="Aller à l'exercice"/>
-        </form>        
+        <a href="UnKilometre01.jsp">Aller à l'exercice</a>      
         
         <h2>Exercice 2</h2>
         <p>Moyenne</p>
-        <form method="post" action="XXX">
-            <input type="submit" title="Aller à l'exercice"/>
-        </form>    
+        <a href="SaiseNombre.jsp">Aller à l'exercice</a>   
         
         <h2>Exercice 3</h2>
         <p>Sapins</p>
-        <form method="post" action="XXX">
-            <input type="submit" title="Aller à l'exercice"/>
-        </form>    
+        <a href="LeSapin01.jsp">Aller à l'exercice</a>    
         
         
         <h2>Exercice 4</h2>
         <p>Deviner un nombre</p>
-        <form method="post" action="XXX">
-            <input type="submit" title="Aller à l'exercice"/>
-        </form>    
+        <a href="AskNumber01.jsp">Aller à l'exercice</a>    
         
         <h2>Exercice 5</h2>
         <p>Non</p>
-        
+        <a href="#">Aller à l'exercice</a>
     </body>
 </html>

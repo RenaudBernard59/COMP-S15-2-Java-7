@@ -44,6 +44,30 @@ public class KilometrePied1Servlet extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        
+    public KilometresAPied(int i) {
+        this.i = i;
+        for (i = 1; i <= 15 ; i++) {
+            if (i == 1) {
+            out.println(i + kilom + caUse + i + kilom + souliers);
+            } else {
+            out.println(i + kiloms + caUse + i + kiloms + souliers);
+                    }//END For}
+
+               
+    }//END Constructor
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+}        
+        
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

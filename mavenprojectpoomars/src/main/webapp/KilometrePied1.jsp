@@ -9,9 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Kilomètre à Pied</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Kilomètre à Pied</h1>
+        <form>
+            <label title="repetition">Nombre de fois à répéter le texte</label>
+            <input type="text" title="repetition" />
+            <br/>
+            <input type="submit" />
+        </form>
     </body>
 </html>

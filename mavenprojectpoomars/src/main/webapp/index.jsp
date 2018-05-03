@@ -16,11 +16,11 @@
         
         <h2>Exercice 1</h2>
         <p>Un Kilomètre à pied</p>
-        <a href="UnKilometre01.jsp">Aller à l'exercice</a>      
+        <a href="UnKilometre01.jsp">Aller à l'exercice</a>      <!-- A faire -->
         
         <h2>Exercice 2</h2>
         <p>Moyenne</p>
-        <a href="SaiseNombre.jsp">Aller à l'exercice</a>   
+        <a href="SaiseNombre.jsp">Aller à l'exercice</a>   <!-- à tester -->
         
         <h2>Exercice 3</h2>
         <p>Sapins</p>

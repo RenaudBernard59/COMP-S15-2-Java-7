@@ -26,7 +26,6 @@
         <p>Sapins</p>
         <a href="LeSapin1.jsp">Aller à l'exercice</a>    
         
-        
         <h2>Exercice 4</h2>
         <p>Deviner un nombre</p>
         <a href="DevinerNombre1.jsp">Aller à l'exercice</a>    
